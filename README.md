@@ -1,0 +1,70 @@
+# Elevate Prototyping Kit
+
+A zero-build-tools HTML prototyping toolkit for G2 design explorations. Provides everything needed to build Elevate-fidelity explorations in plain HTML — no bundler, no framework.
+
+## What's in this kit
+
+- **CSS tokens** (`tokens/elevate.css`) — Design tokens as CSS custom properties, with backward-compatible aliases to `@g2crowd/elevate`'s `--elv-*` variables
+- **Component CSS** (`components/elevate.css`) — Full Elevate component + utility class library. Sourced from UE production Elevate CSS.
+- **Icons** (`icons/icons.css`) — 305 G2 UI icons as CSS background-image classes
+- **Component templates** (`components/templates/`) — Copy-paste HTML for 44 components
+- **Nav shells** (`components/templates/navigation/`) — Complete G2 navigation patterns (topbar, vendor admin, buyer profile, teams portal)
+- **Design system spec** (`design-system/DESIGN.md`) — Authoritative Elevate spec for agent and human reference
+- **Logo assets** (`assets/logos/`) — G2 SVG logos
+
+## Relationship to @g2crowd/elevate
+
+This kit wraps [`@g2crowd/elevate`](https://github.com/g2crowd/elevate-g2) for zero-build-tools HTML prototyping:
+
+- `tokens/elevate.css` provides backward-compatible aliases (e.g. `--bg-primary` → `var(--elv-bg-primary)`) and hardcoded values for tokens not yet exposed as CSS vars by the npm package
+- `components/elevate.css` carries the full utility class coverage needed for prototyping (the npm dist currently ships a subset)
+- `sync.sh` is provided to sync `components/elevate.css` from the npm package once it reaches full utility parity
+
+## Quick start
+
+Include three CSS files in your HTML (adjust path depth to match your file's location):
+
+```html
+<!-- From epics/{epic}/explorations/*.html: depth = ../../../ -->
+<link rel="stylesheet" href="../../../shared/elevate-prototyping-kit/tokens/elevate.css">
+<link rel="stylesheet" href="../../../shared/elevate-prototyping-kit/components/elevate.css">
+<link rel="stylesheet" href="../../../shared/elevate-prototyping-kit/icons/icons.css">
+```
+
+Wrap all content in a container with the `elv` attribute:
+
+```html
+<div elv class="elv-max-w-screen-xl elv-mx-auto elv-p-8">
+  <!-- Your exploration here -->
+  <button class="btn btn--primary btn--md">Primary Action</button>
+</div>
+```
+
+## CSS path depth reference
+
+| File location | CSS prefix |
+|---|---|
+| Root `index.html` | `./shared/elevate-prototyping-kit/` |
+| `epics/{epic}/index.html` | `../../shared/elevate-prototyping-kit/` |
+| `epics/{epic}/explorations/*.html` | `../../../shared/elevate-prototyping-kit/` |
+
+## Syncing from upstream
+
+When `@g2crowd/elevate` releases a new version with improved utility coverage:
+
+```bash
+./sync.sh 1.4.0  # check output for warnings before committing
+git add components/elevate.css
+git commit -m "Sync components/elevate.css from @g2crowd/elevate@1.4.0"
+git push
+```
+
+## Design system reference
+
+- **Authoritative spec**: [`design-system/DESIGN.md`](./design-system/DESIGN.md)
+- **Visual reference**: [Elevate Lookbook](https://www.g2.test/elevate/lookbook)
+- **Component templates**: [`components/templates/`](./components/templates/)
+
+## License
+
+Internal G2 use only.
