@@ -22,7 +22,7 @@ set -euo pipefail
 
 VERSION="${1:-latest}"
 TMPDIR=$(mktemp -d)
-trap "rm -rf \"\$TMPDIR\"" EXIT
+trap "rm -rf \"\$TMPDIR\" 2>/dev/null; true" EXIT
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 

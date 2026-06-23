@@ -6,19 +6,22 @@ A zero-build-tools HTML prototyping toolkit for G2 design explorations. Provides
 
 - **CSS tokens** (`tokens/elevate.css`) — Design tokens as CSS custom properties, with backward-compatible aliases to `@g2crowd/elevate`'s `--elv-*` variables
 - **Component CSS** (`components/elevate.css`) — Full Elevate component + utility class library. Sourced from UE production Elevate CSS.
+- **Component examples** (`examples/`) — 45 elevate-g2 component pages, synced from [`g2crowd/elevate-g2`](https://github.com/g2crowd/elevate-g2). Browse by opening `examples/index.html`.
 - **Icons** (`icons/icons.css`) — 305 G2 UI icons as CSS background-image classes
-- **Component templates** (`components/templates/`) — Copy-paste HTML for 44 components
+- **Component templates** (`components/templates/`) — Copy-paste HTML for 44 components (self-contained `<style>` blocks)
 - **Nav shells** (`components/templates/navigation/`) — Complete G2 navigation patterns (topbar, vendor admin, buyer profile, teams portal)
 - **Design system spec** (`design-system/DESIGN.md`) — Authoritative Elevate spec for agent and human reference
 - **Logo assets** (`assets/logos/`) — G2 SVG logos
+
+Examples are reference gallery pages showing real elevate-g2 CSS in use. Templates are copy-paste starters for explorations.
 
 ## Relationship to @g2crowd/elevate
 
 This kit wraps [`@g2crowd/elevate`](https://github.com/g2crowd/elevate-g2) for zero-build-tools HTML prototyping:
 
 - `tokens/elevate.css` provides backward-compatible aliases (e.g. `--bg-primary` → `var(--elv-bg-primary)`) and hardcoded values for tokens not yet exposed as CSS vars by the npm package
-- `components/elevate.css` carries the full utility class coverage needed for prototyping (the npm dist currently ships a subset)
-- `sync.sh` is provided to sync `components/elevate.css` from the npm package once it reaches full utility parity
+- `components/elevate.css` is synced from the npm dist via `sync.sh`
+- `sync.sh` also syncs the `examples/` directory from the source repo
 
 ## Quick start
 
@@ -53,7 +56,7 @@ Wrap all content in a container with the `elv` attribute:
 When `@g2crowd/elevate` releases a new version with improved utility coverage:
 
 ```bash
-./sync.sh 1.4.0  # check output for warnings before committing
+./sync.sh 1.3.0  # syncs both CSS and examples
 git add components/elevate.css
 git commit -m "Sync components/elevate.css from @g2crowd/elevate@1.4.0"
 git push
