@@ -1,0 +1,19 @@
+sync.sh
+  s_254956c65d997d::t_7efa83e85f8fa8 2,5,7-19,25,29-37,39,42-43,46-48,51-52,56-114,116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "8080381b0c03ddcd127093850ed2fa053ec65be2",
+  "prompts": {},
+  "sessions": {
+    "s_254956c65d997d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_109946d17ffew1ltyTadzEoQUw",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    }
+  }
+}
