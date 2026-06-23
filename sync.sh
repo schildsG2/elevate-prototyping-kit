@@ -96,8 +96,8 @@ done
 # ---------------------------------------------------------------
 echo ""
 EXAMPLE_COUNT=$(ls "$SCRIPT_DIR/examples"/*.html 2>/dev/null | wc -l | tr -d ' ')
-TOKEN_REFS=$(grep -r "token-editor" "$SCRIPT_DIR/examples/" 2>/dev/null | wc -l | tr -d ' ')
-SRC_REFS=$(grep -r "src/css/application" "$SCRIPT_DIR/examples/" 2>/dev/null | wc -l | tr -d ' ')
+TOKEN_REFS=$( { grep -r "token-editor" "$SCRIPT_DIR/examples/" 2>/dev/null || true; } | wc -l | tr -d ' ')
+SRC_REFS=$( { grep -r "src/css/application" "$SCRIPT_DIR/examples/" 2>/dev/null || true; } | wc -l | tr -d ' ')
 KIT_IMPORT=$(grep -c "components/elevate.css" "$SCRIPT_DIR/examples/styles.css" || true)
 
 echo "=== Sync Complete ==="
