@@ -1,0 +1,19 @@
+sync.sh
+  s_fb72af2bcbd9b8::t_91ab98acaf8fe2 99-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "97e3f4d641f34d659d71b593698e6202c02bf881",
+  "prompts": {},
+  "sessions": {
+    "s_fb72af2bcbd9b8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ses_109858a38ffectydwEqhDAEeWz",
+        "model": "unknown"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    }
+  }
+}
