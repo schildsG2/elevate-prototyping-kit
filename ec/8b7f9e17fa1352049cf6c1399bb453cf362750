@@ -1,0 +1,21 @@
+README.md
+  s_f59cfa0cdc9475::t_5c5659a3be1a79 9,11,16-17,23-24,59
+sync.sh
+  s_f59cfa0cdc9475::t_5c5659a3be1a79 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "ec8b7f9e17fa1352049cf6c1399bb453cf362750",
+  "prompts": {},
+  "sessions": {
+    "s_f59cfa0cdc9475": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1098bf263ffeatxQDd76g9Cnir",
+        "model": "gpt-5.4-mini"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    }
+  }
+}
