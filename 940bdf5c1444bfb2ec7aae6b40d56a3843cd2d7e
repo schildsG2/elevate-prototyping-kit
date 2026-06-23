@@ -1,0 +1,36 @@
+components/templates/navigation/vendor-admin-shell.html
+  s_f27f49364cefba::t_55d4796642b3a8 1-1191
+sync.sh
+  s_a3c84bc5a0117c::t_aeab9ec9c91bfc 1-47
+tokens/elevate.css
+  s_a3c84bc5a0117c::t_aeab9ec9c91bfc 1-327
+README.md
+  s_a3c84bc5a0117c::t_aeab9ec9c91bfc 1-70
+components/elevate.css
+  s_a3c84bc5a0117c::t_deb0af26c57e7d 13248
+  s_a3c84bc5a0117c::t_c48b2797d64b15 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "940bdf5c1444bfb2ec7aae6b40d56a3843cd2d7e",
+  "prompts": {},
+  "sessions": {
+    "s_a3c84bc5a0117c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_152666e6cffe7E5wv9E2SKj5Du",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    },
+    "s_f27f49364cefba": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ses_152666e6cffe7E5wv9E2SKj5Du",
+        "model": "unknown"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    }
+  }
+}
