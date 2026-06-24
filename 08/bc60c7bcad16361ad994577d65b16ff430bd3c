@@ -1,0 +1,22 @@
+icons/index.html
+  s_9faac1bceb9f09::t_1cadaac8bf2061 268,275,296
+  s_9faac1bceb9f09::t_63d4e10038c135 273,344
+index.html
+  s_9faac1bceb9f09::t_63d4e10038c135 5,9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "08bc60c7bcad16361ad994577d65b16ff430bd3c",
+  "prompts": {},
+  "sessions": {
+    "s_9faac1bceb9f09": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_105efcc36ffeMZmkZmw240QheM",
+        "model": "gpt-5.4-mini"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    }
+  }
+}
