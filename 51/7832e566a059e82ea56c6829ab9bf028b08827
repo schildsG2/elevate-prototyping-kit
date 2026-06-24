@@ -1,0 +1,19 @@
+utilities.css
+  s_37ec33e74e4c7e::t_6d8e434ad02eaa 1-204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "517832e566a059e82ea56c6829ab9bf028b08827",
+  "prompts": {},
+  "sessions": {
+    "s_37ec33e74e4c7e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_105fb56a5ffeDqyPK4NvcLT4g2",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Childs <schilds@g2.com>"
+    }
+  }
+}
