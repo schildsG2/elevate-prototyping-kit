@@ -1,0 +1,204 @@
+/* ============================================================
+   Elevate Prototyping Kit — Supplemental Utilities
+
+   Tailwind utility classes used by forward-looking exploration
+   files (index.html, exploration-starter.html) that are NOT
+   included in @g2crowd/elevate's dist/elevate.css.
+
+   These classes are extracted from the frozen UE production
+   Tailwind build where available. Classes not present there are
+   defined manually using the matching Elevate/Tailwind values.
+
+   Maintained manually — NOT synced by sync.sh.
+   ============================================================ */
+
+/* Layout */
+.elv-grid {
+  display: grid;
+}
+
+.elv-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.elv-items-start {
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/* Position */
+.elv-left-3 {
+  left: .75rem;
+}
+
+/* Sizing */
+.elv-h-9 {
+  height: 2.25rem;
+}
+
+.elv-w-9 {
+  width: 2.25rem;
+}
+
+.elv-min-w-60 {
+  min-width: 15rem;
+}
+
+.elv-max-w-7xl {
+  max-width: 80rem;
+}
+
+.elv-max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.elv-max-w-xl {
+  max-width: 36rem;
+}
+
+/* Spacing */
+.elv-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.elv-mb-12 {
+  margin-bottom: 3rem;
+}
+
+.elv-mb-3 {
+  margin-bottom: .75rem;
+}
+
+.elv-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.elv-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.elv-mt-16 {
+  margin-top: 4rem;
+}
+
+.elv-p-8 {
+  padding: 2rem;
+}
+
+.elv-pb-8 {
+  padding-bottom: 2rem;
+}
+
+.elv-pl-10 {
+  padding-left: 2.5rem;
+}
+
+.elv-pt-12 {
+  padding-top: 3rem;
+}
+
+.elv-py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.elv-py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Flex/grid gap */
+.elv-gap-4 {
+  gap: 1rem;
+}
+
+/* Typography */
+.elv-font-extrabold {
+  font-weight: 800;
+}
+
+.elv-uppercase {
+  text-transform: uppercase;
+}
+
+.elv-leading-relaxed {
+  line-height: 1.625;
+}
+
+.elv-leading-snug {
+  line-height: 1.375;
+}
+
+.elv-leading-tight {
+  line-height: 1.25;
+}
+
+.elv-text-center {
+  text-align: center;
+}
+
+.elv-text-link {
+  --tw-text-opacity: 1;
+  color: rgba(0, 115, 245, var(--tw-text-opacity));
+}
+
+.elv-text-neutral-30 {
+  color: #cacace;
+}
+
+.elv-tracking-wide {
+  letter-spacing: .025em;
+}
+
+.elv-whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/* Icons */
+.elv-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elv-icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.elv-icon-lg {
+  width: 24px;
+  height: 24px;
+}
+
+.elv-icon-fill-current {
+  fill: currentColor;
+}
+
+/* Color/fill */
+.elv-fill-neutral-80 {
+  fill: #4c4b53;
+}
+
+/* Transform */
+.elv--translate-y-0-5 {
+  --tw-translate-x: 0;
+  --tw-translate-y: -0.125rem;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+}
+
+.hover\:elv--translate-y-0-5:hover {
+  --tw-translate-x: 0;
+  --tw-translate-y: -0.125rem;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+}
+
+/* Responsive variants used by forward-looking files */
+@media (min-width: 768px) {
+  .md\:elv-w-5\/6 {
+    width: 83.333333%;
+  }
+}
