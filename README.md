@@ -62,6 +62,17 @@ git commit -m "Sync components/elevate.css from @g2crowd/elevate@1.4.0"
 git push
 ```
 
+## Adding new utilities
+
+When an exploration needs a Tailwind utility class that's not in the npm dist (e.g., `elv-grid-cols-4`, `elv-gap-8`), add it to `utilities.css`:
+
+1. Find the class definition in `shared/elevate-lite/components/elevate.css` (the frozen UE production CSS)
+2. Copy the rule block to `utilities.css`
+3. Include any responsive variants (`@media` breakpoint versions) if needed
+4. Commit the change to this repo
+
+`utilities.css` is maintained manually — `sync.sh` does not overwrite it.
+
 ## Design system reference
 
 - **Authoritative spec**: [`design-system/DESIGN.md`](./design-system/DESIGN.md)
